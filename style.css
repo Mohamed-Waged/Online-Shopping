@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+/* Start Header */
+.header{
+    background-color: black;
+}
+.header .container{
+    width: 80%;
+    margin:  auto;
+}
+.header .logo{
+    float: left;
+    cursor: pointer;
+}
+.header .logo img{
+    height: 35px;
+    padding-top: 10px;
+}
+.header .logo span{
+    color: #fdd223;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header .links{
+    padding: 1px;
+    float: right;
+}
+.header .links li{
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+}
+.header .links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.header .links .active{
+    color: #fdd223;
+    font-weight: bold;
+}
+.header .links a:hover{
+    color: #fdd223;
+    font-weight: bold;
+}
+/* End Header */
+/* Start Home */
+.home{
+    height: calc(100vh - 41px);
+    background-image:url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home .home-content{
+    width: 20%;
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.home .home-content p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.home .home-content h1{
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.home .home-content span{
+    color: rgb(250,107,175);
+}
+.home .home-content button{
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+/* End Home */
+/* Start Info */
+.information{
+    background-color: black;
+    color: white;
+}
+.information .info-content{
+    width: 80%;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+.information .info-content h2{
+    color: #fdd223;
+    margin-bottom: 20px;
+}
+.information .info-content p{
+    text-align: justify;
+    line-height: 1.4;
+}
+.information .visit{
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #f9be00;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* End Info */
+/* Start Product */
+.product .container{
+    width: 70%;
+    margin: 50px auto;
+}
+.product .container .products{
+    margin-top: 20px;
+    padding: 5px;
+}
+.product .container .products .product-content{
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    float: left;
+}
+.product .container .products .md{
+    margin: 0 5%;
+}
+.product .container .products .product-content .product-img{
+    height: 40%;
+    position: relative;
+}
+.product .container .products .product-content .product-img .price{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px;
+    background-color: #0000007d;
+    border-radius: 5px;
+}
+.product .container .products .product-content .product-img img{
+    width: 100%; 
+    border-radius: 5px;
+}
+.product .container .products .product-content .product-info{
+    padding: 10px;
+}
+.product .container .products .product-content .product-info h2{
+    color: #fdd223;
+    margin-bottom: 10px;
+}
+.product .container .products .product-content .product-info p{
+    text-align: justify;
+}
+/* End Product */
+/* Start Gallery */
+.gallery{
+    background-color: black;
+    padding-top: 5px;
+    border-bottom: 10px solid #f9be00;
+}
+.gallery .gallery-title{
+    color: #fdd223;
+    text-align: center;
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+.gallery .gallery-container{
+    width: 70%;
+    margin: 0 auto;
+}
+.gallery .gallery-container .card{
+    width: calc(96% / 3 );
+    margin-bottom: 10px;
+    float: left;
+}
+.gallery .gallery-container .md{
+    margin: 0 2%;
+}
+.gallery .gallery-container .card img{
+    width: 100%;
+}
+.gallery .order{
+    margin-top: 10px;
+    background-color: #f9be00;
+    color: white;
+}
+.gallery .order .order-content{
+    width: 70% ;
+    margin: 0 auto;
+    overflow: auto;
+}
+.gallery .order p{
+    padding-top: 10px ;
+    font-size: 14px;
+}
+.gallery .order h2{
+    font-size: 30px;
+    margin: 10px 0;
+    float: left;
+}
+.gallery .order button{
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    float: right;
+}
+.gallery .achievement-container{
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+}
+.gallery .achievement-container p{
+    margin: 10px 0 20px;
+    line-height: 1.2;
+}
+.gallery .achievement-container .achievement-content .achievement-img{
+    width: 40%;
+    float: left;
+}
+.gallery .achievement-container .achievement-content .achievement-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.gallery .achievement-container .achievement-content .achievement-info{
+    width: 40%;
+    margin:30px 50px 0 0;
+    float: right;
+}
+.gallery .achievement-container .achievement-content .achievement-info .info{
+    width: 40%;
+    margin: 5px 10px 50px 0;
+    float: left;
+}
+.gallery .achievement-container .achievement-content .achievement-info .info p{
+    margin: 0;
+    font-size: 13px;
+}
+.gallery .achievement-container .achievement-content .achievement-info .info small{
+    font-size: 8px;
+}
+/* End Gallery */
+/* Start Contact */
+.contact{
+    height: 300px;
+    background-image: url(images/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.contact .overlay{
+    position: absolute;
+    height: 100%;
+    background-color: #6867ee4d;
+}
+.contact .overlay .content{
+    width: 80%;
+    margin: 25px auto;
+}
+.contact .overlay .content .content-info{
+    width: 60%;
+    margin-top: 50px;
+    float: left;
+}
+.contact .overlay .content .content-info h2{
+    color: #f9be00;
+    margin-bottom: 20px;
+}
+.contact .overlay .content .content-info p{
+    color: white;
+    line-height: 1.4;
+    text-align: justify;
+}
+.contact .overlay .content .content-table{
+    width: 25%;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 4px #ffff00;
+    float: right;
+}
+.contact .overlay .content .content-table input{
+    width: 100%;
+    height: 40px;
+    padding: 5px ;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 4px;
+}
+.contact .overlay .content .content-table button{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9be00;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+}
+/* End Contact */
+/* Start Footer */
+.foot{
+    background-color: black;
+    border-top: 10px solid #f9be00;
+    color: white;
+    padding: 30px 0;
+}
+.foot .content{
+    width: 80%;
+    margin: 20px auto;
+}
+.foot .content .left{
+    width: 30%;
+    line-height: 1.5;
+    float: left;
+}
+.foot .content .middle{
+    width: 30%;
+    color: #f9be00;
+    cursor: pointer;
+    line-height: 1.5;
+    float: left;
+}
+.foot .content .middle img{
+    border-radius: 50%;
+    height: 15px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.foot .content .right{
+    width: 40%;
+    line-height: 1.5;
+    float: right;
+}
+.foot .content .right img{
+    margin-right: 4px;
+    cursor: pointer;
+}
+.foot .content .right input{
+    width: 50%;
+    height: 30px;
+    padding: 4px;
+    background-color: black;
+    border-color: white;
+    margin: 10px 0;
+}
+.foot .content .right button{
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* End Footer */
